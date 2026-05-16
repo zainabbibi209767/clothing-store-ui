@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue Vista | Fashion Redefined</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;900&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100vh; overflow: hidden; font-family: 'Outfit', sans-serif; background-color: #fff0f3; }
+
+        .fashion-wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .main-card {
+            width: 95%;
+            max-width: 1150px;
+            height: 85vh;
+            background: #ffffff;
+            border-radius: 50px; /* Rounded modern look */
+            display: flex;
+            box-shadow: 0 50px 100px rgba(255, 71, 126, 0.15);
+            overflow: hidden;
+            position: relative;
+            border: 8px solid #fff;
+        }
+
+        /* Left Side: Editorial Layout */
+        .info-panel {
+            flex: 1;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #000; /* Deep Black contrast */
+            color: white;
+            border-radius: 0 100px 100px 0; /* Unique shape */
+            z-index: 2;
+        }
+
+        .tagline {
+            color: #ff477e;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 15px;
+            font-size: 0.8rem;
+        }
+
+        h1 {
+            font-family: 'Unbounded', sans-serif;
+            font-size: 3.8rem;
+            line-height: 1;
+            margin-bottom: 25px;
+            color: #fff;
+        }
+
+        h1 span {
+            color: #ff477e;
+            -webkit-text-stroke: 1px white;
+            color: transparent;
+        }
+
+        p {
+            color: #999;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        .cta-btn {
+            padding: 20px 45px;
+            background: #ff477e;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 40px;
+            width: fit-content;
+            transition: 0.4s;
+            box-shadow: 0 15px 30px rgba(255, 71, 126, 0.4);
+            text-transform: uppercase;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px) rotate(-2deg);
+            background: #ff0a54;
+        }
+
+        /* Right Side: Visual Image */
+        .visual-panel {
+            flex: 1.1;
+            position: relative;
+            margin-left: -50px; /* Overlap effect */
+        }
+
+        .fashion-img {
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070') no-repeat center center/cover;
+            transition: transform 1s ease;
+        }
+
+        .main-card:hover .fashion-img {
+            transform: scale(1.1);
+        }
+
+        /* Decorative Floating Circles */
+        .circle-decor {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: #ff477e;
+            filter: blur(80px);
+            opacity: 0.3;
+            top: -50px;
+            right: -50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fashion-wrapper">
+        <div class="main-card">
+            <!-- Information Side -->
+            <div class="info-panel">
+                <span class="tagline">Summer Collection 2026</span>
+                <h1>Wear Your <br><span>Confidence.</span></h1>
+                <p>Express your unique style with our latest couture pieces. Designed for the bold, the beautiful, and the brave.</p>
+                
+                <a href="#" class="cta-btn">Shop The Look</a>
+            </div>
+
+            <!-- Visual Side -->
+            <div class="visual-panel">
+                <div class="fashion-img"></div>
+                <div class="circle-decor"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
